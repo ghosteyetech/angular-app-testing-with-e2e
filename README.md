@@ -1,3 +1,6 @@
+Original tutorial link: 
+https://scotch.io/@charlieoduk/angular-end-to-end-testing507
+
 # AngularAppTesting with e2e
 
 ## Running end-to-end tests

@@ -1,11 +1,24 @@
-import { browser, by, element } from 'protractor';
+import { browser, by, element, promise, ElementFinder, ElementArrayFinder } from 'protractor';
 
 export class HomePage {
-  navigateTo(): Promise<unknown> {
-    return browser.get(browser.baseUrl) as Promise<unknown>;
+
+  navigateToHome(): promise.Promise<any> {
+    return browser.get('/home');
   }
 
-  getTitleText(): Promise<string> {
-    return element(by.css('app-root .content span')).getText() as Promise<string>;
+  getPageBrandName(): promise.Promise<string> {
+    return element(by.css('.masthead-brand')).getText();
+  }
+
+  getNavBar(): ElementFinder {
+    return element(by.tagName('nav'));
+  }
+
+  getAlbumButton(): ElementFinder {
+    return this.getNavBar().all(by.css('a')).get(1);
+  }
+
+  getLearnMoreButton(): ElementFinder {
+    return element(by.css('.lead a'));
   }
 }
