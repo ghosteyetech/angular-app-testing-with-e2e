@@ -8,6 +8,7 @@ NOTE: GHOST
 
 > In protractor.conf.js we can specify the order of the test case files in "config.specs" array.
 > Right now has to make test case files manually by creating folders
+> Good practice is maintain same file naming for test files in the e2e folder
 
 ## Development server
 
