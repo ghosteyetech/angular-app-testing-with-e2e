@@ -16,7 +16,7 @@ NOTE: GHOST
 ## Implementation with jenkins
 Original tutorial: https://medium.com/@garunski/angular-e2e-testing-with-protractor-in-jenkins-on-kubernetes-a6f1010de881
 
->JUnitReporter to get the test report to show up in Jenkins. For that add jasmine-reporters and the code below to the protractor config.
+>JUnitReporter to get the test report to show up in Jenkins. For that add jasmine-reporters and the code below to the protractor.conf.js.
 ```
    $ npm i --save-dev jasmine-reporters
 ```
@@ -34,7 +34,7 @@ Original tutorial: https://medium.com/@garunski/angular-e2e-testing-with-protrac
 
 ```
 
-> Adding headless testing 
+> Adding headless testing config for protractor.conf.js
 ```
     capabilities: {
     chromeOptions: {
