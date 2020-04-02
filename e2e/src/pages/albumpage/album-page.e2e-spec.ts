@@ -7,7 +7,6 @@ describe('Album Page', () => {
 
     beforeEach(() => {
         albumPage.navigateToAlbumPage();
-        browser.pause(5859);
     });
 
     it('Should find the home navigation button', () => {

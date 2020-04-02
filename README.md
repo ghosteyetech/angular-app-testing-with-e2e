@@ -13,6 +13,28 @@ NOTE: GHOST
 > Right now has to make test case files manually by creating folders
 > Good practice is maintain same file naming for test files in the e2e folder
 
+## Implementation with jenkins
+Original tutorial: https://medium.com/@garunski/angular-e2e-testing-with-protractor-in-jenkins-on-kubernetes-a6f1010de881
+
+>JUnitReporter to get the test report to show up in Jenkins. For that add jasmine-reporters and the code below to the protractor config.
+```
+   $ npm i --save-dev jasmine-reporters
+```
+```
+    const { JUnitXmlReporter } = require('jasmine-reporters');
+    ...
+    onPrepare() {
+    ...
+        const junitReporter = new JUnitXmlReporter({
+        savePath: './e2e/test-results/E2E',
+        consolidateAll: true//false // (false) -> will create seperate xml file for each test case file
+        });
+        jasmine.getEnv().addReporter(junitReporter);
+    }
+
+```
+
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

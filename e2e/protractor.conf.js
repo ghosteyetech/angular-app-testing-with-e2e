@@ -3,6 +3,7 @@
 // https://github.com/angular/protractor/blob/master/lib/config.ts
 
 const { SpecReporter } = require('jasmine-spec-reporter');
+const { JUnitXmlReporter } = require('jasmine-reporters');
 
 /**
  * @type { import("protractor").Config }
@@ -30,6 +31,15 @@ exports.config = {
     require('ts-node').register({
       project: require('path').join(__dirname, './tsconfig.json')
     });
+    
     jasmine.getEnv().addReporter(new SpecReporter({ spec: { displayStacktrace: true } }));
-  }
+
+    //Add following code snippet to write test results into a file
+    const junitReporter = new JUnitXmlReporter({
+      savePath: './e2e/test-results/E2E',
+      consolidateAll: true//false // (false) -> will create seperate xml file for each test case file
+    });
+    jasmine.getEnv().addReporter(junitReporter);
+  },
+  resultJsonOutputFile:'./e2e/test-results/result.json',
 };
