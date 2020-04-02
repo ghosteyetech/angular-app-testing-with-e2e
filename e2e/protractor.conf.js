@@ -13,6 +13,7 @@ exports.config = {
     //'./src/**/*.e2e-spec.ts'
     './src/app.e2e-spec.ts',
     './src/pages/homepage/homepage.e2e-spec.ts',
+    './src/pages/albumpage/album-page.e2e-spec.ts',
   ],
   capabilities: {
     browserName: 'chrome'
