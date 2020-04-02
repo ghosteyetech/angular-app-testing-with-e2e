@@ -34,6 +34,16 @@ Original tutorial: https://medium.com/@garunski/angular-e2e-testing-with-protrac
 
 ```
 
+> Adding headless testing 
+```
+    capabilities: {
+    chromeOptions: {
+        args: [ "--headless" ]
+    },
+    'browserName': 'chrome'
+    },
+```
+
 
 ## Development server
 

@@ -17,6 +17,9 @@ exports.config = {
     './src/pages/albumpage/album-page.e2e-spec.ts',
   ],
   capabilities: {
+    chromeOptions: {// By adding this chromeOptions as headless will not launch the browser
+      args: [ "--headless" ]
+    },
     browserName: 'chrome'
   },
   directConnect: true,
