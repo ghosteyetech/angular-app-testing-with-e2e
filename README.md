@@ -46,7 +46,7 @@ NOTE: GHOST
 >In order run post scripts( like npm run e2e) in jenkins has to install "PostBuildScript" plugin. For that
 go to jenkin plugin manager -> Available tab -> surch for "PostBuildScript" and install.
 
-    ![Test Image 1](https://github.com/ghosteyetech/angular-app-testing-with-e2e/blob/master/JenkinGuideImages/Capture.PNG)
+    ![Test Image 1](JenkinGuideImages/Capture.PNG)
 
 ## Development server
 
