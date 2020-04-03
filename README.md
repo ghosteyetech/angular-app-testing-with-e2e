@@ -48,6 +48,11 @@ go to jenkin plugin manager -> Available tab -> surch for "PostBuildScript" and 
 
     ![Test Image 1](JenkinGuideImages/Capture.PNG)
 
+    <p align="center">
+        <img src="JenkinGuideImages/Capture.PNG" width="350" title="hover text">
+        <img src="JenkinGuideImages/Capture.PNG" width="350" alt="accessibility text">
+    </p>
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
