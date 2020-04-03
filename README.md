@@ -43,6 +43,19 @@ NOTE: GHOST
     },
 ```
 
+For running test case in a specific order should add scripts files as follows in protractor.conf.js in specs array. 
+```
+    ...
+    specs: [
+        //'./src/**/*.e2e-spec.ts'
+        './src/app.e2e-spec.ts',
+        './src/pages/homepage/homepage.e2e-spec.ts',
+        './src/pages/albumpage/album-page.e2e-spec.ts',
+    ],
+    ...
+
+```
+
 >In order run post scripts( like npm run e2e) in jenkins has to install "PostBuildScript" plugin. For that go to jenkin plugin manager -> Available tab -> search for "PostBuildScript" and install.
     ![Source Management config](./JenkinGuideImages/Capture.PNG)
 
