@@ -52,6 +52,9 @@ NOTE: GHOST
 >Adding Build config in “Build” section 
     ![Adding build settings](./JenkinGuideImages/Capture3.PNG)
 
+>Adding post build commad in “Post-build Actions” 
+    ![Adding build settings](./JenkinGuideImages/Capture4.PNG)
+
 
 ## Development server
 
