@@ -36,10 +36,10 @@ NOTE: GHOST
 > Adding headless testing config for protractor.conf.js
 ```
     capabilities: {
-    chromeOptions: {
-        args: [ "--headless" ]
-    },
-    'browserName': 'chrome'
+        chromeOptions: {
+            args: [ "--headless" ]
+        },
+        'browserName': 'chrome'
     },
 ```
 
