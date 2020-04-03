@@ -48,6 +48,9 @@ NOTE: GHOST
     ![Installing PostBuildScript plugin](./JenkinGuideImages/Capture2.PNG)
 
 >Set repository details in Jemkins "Source Management" section
+    ![Source Management config](./JenkinGuideImages/Capture.PNG)
+
+>Set repository details in Jemkins "Source Management" section
     ![Source Management config](./JenkinGuideImages/Capture2.PNG)
 
 >Adding Build config in “Build” section 
