@@ -43,8 +43,7 @@ NOTE: GHOST
     },
 ```
 
->In order run post scripts( like npm run e2e) in jenkins has to install "PostBuildScript" plugin. For that
-go to jenkin plugin manager -> Available tab -> search for "PostBuildScript" and install.
+>In order run post scripts( like npm run e2e) in jenkins has to install "PostBuildScript" plugin. For that go to jenkin plugin manager -> Available tab -> search for "PostBuildScript" and install.
 
     ![Installing PostBuildScript plugin](./JenkinGuideImages/Capture2.PNG)
 
