@@ -14,7 +14,6 @@ NOTE: GHOST
 > Good practice is maintain same file naming for test files in the e2e folder
 
 ## Implementation with jenkins
-Original tutorial: https://medium.com/@garunski/angular-e2e-testing-with-protractor-in-jenkins-on-kubernetes-a6f1010de881
 
 >JUnitReporter to get the test report to show up in Jenkins. For that add jasmine-reporters and the code below to the protractor.conf.js.
 ```
@@ -44,6 +43,10 @@ Original tutorial: https://medium.com/@garunski/angular-e2e-testing-with-protrac
     },
 ```
 
+>In order run post scripts( like npm run e2e) in jenkins has to install "PostBuildScript" plugin. For that
+go to jenkin plugin manager -> Available tab -> surch for "PostBuildScript" and install.
+
+    ![Test Image 1](3DTest.png)
 
 ## Development server
 
