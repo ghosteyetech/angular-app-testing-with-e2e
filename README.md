@@ -50,6 +50,9 @@ NOTE: GHOST
 >Set repository details in Jemkins "Source Management" section
     ![Source Management config](./JenkinGuideImages/Capture2.PNG)
 
+>Adding Build config in “Build” section 
+    ![Adding build settings](./JenkinGuideImages/Capture3.PNG)
+
 
 ## Development server
 
