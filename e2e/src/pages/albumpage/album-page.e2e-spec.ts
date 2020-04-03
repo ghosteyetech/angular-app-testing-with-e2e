@@ -10,8 +10,7 @@ describe('Album Page', () => {
     });
 
     it('Should find the home navigation button', () => {
-        //expect(albumPage.getHomeNavigationButton().getText()).toContain('Home');
-        expect(albumPage.getHomeNavigationButton().getText()).toContain('Home-ccc');
+        expect(albumPage.getHomeNavigationButton().getText()).toContain('Home');
     });
 
     it('Should redirect to the home page when \'Home\' is clicked', () => {
