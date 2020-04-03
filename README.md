@@ -43,7 +43,7 @@ NOTE: GHOST
     },
 ```
 
-For running test case in a specific order should add scripts files as follows in protractor.conf.js in specs array. 
+>For running test case in a specific order should add scripts files as follows in protractor.conf.js in specs array. 
 ```
     ...
     specs: [
