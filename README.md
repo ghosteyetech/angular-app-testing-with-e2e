@@ -46,7 +46,7 @@ NOTE: GHOST
 >In order run post scripts( like npm run e2e) in jenkins has to install "PostBuildScript" plugin. For that
 go to jenkin plugin manager -> Available tab -> search for "PostBuildScript" and install.
 
-    ![Installing PostBuildScript plugin](./JenkinGuideImages/Capture_1.PNG)
+    ![Installing PostBuildScript plugin](./JenkinGuideImages/Capture2.PNG)
 
 >Set repository details in Jemkins "Source Management" section
     ![Source Management config](./JenkinGuideImages/Capture2.PNG)
